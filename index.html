@@ -9,42 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
             background: rgb(238, 238, 238);
-            margin: 0;
+            margin: 5px auto;
             padding: 0;
-            display: flex;
-            max-width: 90%;
-            min-width: 40%;
-            margin-left: 20px;
-
+            max-width: 100%;
+            width: 90%;
         }
 
         .navbar-custom {
             background: linear-gradient(to right, #333333, #666666, #999999, #CCCCCC, #dedede);
-            /* Light gray background */
             border: 0.20px solid #676767;
-            /* Darker gray border */
             border-radius: 12px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            /* Soft shadow for depth */
-            margin-top: 10px;
+            margin: 10px 0;
             color: black;
             font-family: quicksand;
-            width: 103%;
+            width: 100%;
             transition: transform 0.3s ease;
         }
 
@@ -55,9 +41,7 @@
         .navbar-custom .navbar-brand,
         .navbar-custom .navbar-nav .nav-link {
             color: black;
-            /* Cor do texto branco */
             font-family: 'quicksand';
-            /*alterando a fonte do verso*/
         }
 
         .logo1 {
@@ -67,39 +51,30 @@
         }
 
         #tit1-A {
-            float: center;
             display: flex;
             justify-content: center;
             align-items: center;
             margin-left: 70px;
-
         }
 
         #Sub1-A {
-            /* Ajuste o valor conforme necessário */
             font-size: 13px;
-            /* Define o tamanho do texto */
             margin-right: 150px;
-
         }
 
-        #Sobre-Mim {
-            margin-right: 70px;
+        #Sobre-Mim, #Sobre-Tec {
+            margin: 0 auto;
             margin-top: 30px;
-            max-width: 80%;
-        }
-
-        #Sobre-Tec {
-            margin-right: 70px;
-            margin-top: 20px;
-            max-width: 80%;
-            margin-top: 30px;
+            max-width: 90%;
         }
 
         #Tec-H1 {
-            margin-left: 50px;
-            margin-top: 20px;
-            margin-top: 30px;
+            color: black;
+            font-size: 20px;
+            display: center;
+            align-items: center;
+            justify-content: center;
+
         }
 
         h2 {
@@ -117,66 +92,19 @@
             font-size: 10px;
         }
 
-        #python {
-            color: rgb(100, 73, 250);
+        #python, #js, #html-css, #node, #bootstrap, #dev-full-stack {
             text-decoration: none;
             list-style: none;
             font-family: 'Roboto Mono';
-            font-size: 35px;
             margin: 0 auto;
-
-            /* Isso centraliza horizontalmente o elemento */
         }
 
-        #js {
-            color: rgb(255, 243, 17);
-            text-decoration: none;
-            list-style: none;
-            font-family: 'Roboto Mono';
-            font-size: 36px;
-            margin: 0 auto;
-            /* Isso centraliza horizontalmente o elemento */
-        }
-
-        #html-css {
-            color: cadetblue;
-            text-decoration: none;
-            list-style: none;
-            font-family: 'Roboto Mono';
-            font-size: 32px;
-            margin: 0 auto;
-            /* Isso centraliza horizontalmente o elemento */
-        }
-
-        #node {
-            color: rgb(102, 255, 0);
-            text-decoration: none;
-            list-style: none;
-            font-family: 'Roboto Mono';
-            font-size: 30px;
-            margin: 0 auto;
-            /* Isso centraliza horizontalmente o elemento */
-        }
-
-        #bootstrap {
-            color: rgb(221, 3, 255);
-            text-decoration: none;
-            list-style: none;
-            font-family: 'Roboto Mono';
-            font-size: 30px;
-            margin: 0 auto;
-            /* Isso centraliza horizontalmente o elemento */
-        }
-
-        #dev-full-stack {
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            list-style: none;
-            font-family: 'Roboto Mono';
-            font-size: 27px;
-            margin: 0 auto;
-            /* Isso centraliza horizontalmente o elemento */
-        }
+        #python { color: rgb(100, 73, 250); font-size: 35px; }
+        #js { color: rgb(255, 243, 17); font-size: 36px; }
+        #html-css { color: cadetblue; font-size: 32px; }
+        #node { color: rgb(102, 255, 0); font-size: 30px; }
+        #bootstrap { color: rgb(221, 3, 255); font-size: 30px; }
+        #dev-full-stack { color: rgb(0, 0, 0); font-size: 27px; }
 
         .fim {
             display: flex;
@@ -189,7 +117,7 @@
             color: white;
         }
 
-        .py {
+        .py, .js, .html, .node, .boot, .full {
             border: 1px solid black;
             border-radius: 10px;
             text-align: center;
@@ -198,73 +126,7 @@
             transition: transform 0.3s ease;
         }
 
-        .py:hover {
-            transform: scale(1.1);
-        }
-
-        .js {
-            border: 1px solid black;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-            width: 260px;
-            transition: transform 0.3s ease;
-        }
-
-        .js:hover {
-            transform: scale(1.1);
-        }
-
-        .html {
-            border: 1px solid black;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-            width: 260px;
-            transition: transform 0.3s ease;
-        }
-
-        .html:hover {
-            transform: scale(1.1);
-        }
-
-        .node {
-            border: 1px solid black;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-            width: 260px;
-            transition: transform 0.3s ease;
-        }
-
-        .node:hover {
-            transform: scale(1.1);
-        }
-
-        .boot {
-            border: 1px solid black;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-            width: 260px;
-            transition: transform 0.3s ease;
-        }
-
-        .boot:hover {
-            transform: scale(1.1);
-        }
-
-        .full {
-            border: 1px solid black;
-            border-radius: 10px;
-            text-align: center;
-            margin-top: 20px;
-            width: 260px;
-            transition: transform 0.3s ease;
-            margin-left: 20px;
-        }
-
-        .full:hover {
+        .py:hover, .js:hover, .html:hover, .node:hover, .boot:hover, .full:hover {
             transform: scale(1.1);
         }
 
@@ -272,17 +134,14 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
-            /* Espaçamento entre as divs */
         }
 
-        .container-teca>div {
+        .container-teca > div {
             background-color: #f0f0f0;
             border: 1px solid #ccc;
             box-sizing: border-box;
             flex: 1 1 calc(33.33% - 20px);
-            /* Ajuste conforme necessário */
             min-width: 200px;
-            /* Tamanho mínimo das divs */
             padding: 10px;
         }
 
@@ -294,6 +153,26 @@
             list-style: none;
             font-weight: bold;
         }
+
+        @media (max-width: 768px) {
+            .container-teca {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .container-teca > div {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            body {
+                display: block;
+            }
+
+            .navbar-custom {
+                margin: 0;
+            }
+        }
     </style>
 </head>
 
@@ -303,28 +182,23 @@
             <nav class="navbar navbar-expand-lg navbar-custom">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Louis, Conheça mais</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#contatosModal">Contatos</a>
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contatosModal">Contatos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal"
-                                    data-bs-target="#redesSociaisModal">Redes Sociais</a>
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#redesSociaisModal">Redes Sociais</a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Modal de Contatos -->
-            <div class="modal fade" id="contatosModal" tabindex="-1" aria-labelledby="contatosModalLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="contatosModal" tabindex="-1" aria-labelledby="contatosModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -332,17 +206,14 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <!-- Insira suas informações de contato aqui -->
                             55+ (81) 99953-6268
                         </div>
                     </div>
                 </div>
             </div>
-
             <!-- Modal de Redes Sociais -->
-            <div class="modal fade" id="redesSociaisModal" tabindex="-1" aria-labelledby="redesSociaisModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg"> <!-- Ajuste o tamanho do modal conforme necessário -->
+            <div class="modal fade" id="redesSociaisModal" tabindex="-1" aria-labelledby="redesSociaisModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
                             <h5 class="modal-title" id="redesSociaisModalLabel">Redes Sociais</h5>
@@ -354,110 +225,82 @@
                                 <li>TikTok: eolouiszz</li>
                                 <li>Insta: eolouiszz</li>
                                 <li>Discord: Louiszika</li>
-                                <!-- Adicione outras redes sociais conforme necessário -->
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <h1>Seja bem vindo, A meu portfolio <strong>Louis</strong></h1>
+            <h1>Seja bem vindo, A meu portfolio <br><strong>Louis</strong></h1>
             <div class="container-A">
-                <p>Olá, eu sou o Louis, tenho 12 anos, e venho mergulhando no mundo da programação desde os meus 10 ou
-                    11 anos. Desde os meus 6 ou 7 anos, desenvolvi uma paixão ardente por tecnologia. </p>
+                <div class="justify-content-center">
+                    <div class="col-auto text-center">
+                <p>Olá, eu sou o Louis, tenho 12 anos, e venho mergulhando no mundo da programação desde os meus 10 ou 11 anos. Desde os meus 6 ou 7 anos, desenvolvi uma paixão ardente por tecnologia.</p>
+                </div>
+                </div>
             </div>
-
-
             <div class="Container-C">
-                <p id="Sobre-Tec">Depois de estudar Python por um mês e três semanas, fiquei muito feliz com os
-                    resultados. Conseguia criar sistemas para adivinhar números usando o randint e já compreendia os
-                    conceitos básicos de programação. Foi com Python que desenvolvi minha lógica de programação.
-
-                    Em seguida, mergulhei no estudo de HTML e CSS, utilizando apenas o celular. Mesmo com essa
-                    limitação, consegui realizar vários projetos, embora simples, mas informativos. Quando finalmente
-                    ganhei meu próprio computador, retomei os estudos, desta vez focando em JavaScript. Com a base
-                    sólida em lógica de programação, pude compreender os conceitos dessa linguagem muito mais
-                    rapidamente.
-
-
-
-
-                </p>
+                <div class="justify-content-center">
+                    <div class="col-auto text-center">
+                <p id="Sobre-Tec">Depois de estudar Python por um mês e três semanas, fiquei muito feliz com os resultados. Conseguia criar sistemas para adivinhar números usando o randint e já compreendia os conceitos básicos de programação. Foi com Python que desenvolvi minha lógica. Foi com Python que desenvolvi minha lógica e comecei a explorar mais a fundo o mundo da programação.</p>
+                </div>
+                </div>
             </div>
-        </div>
-        <div class="Tec">
-            <h1 id="Tec-H1">Tecnologias que tenho conhecimento/dominio🤓​</h1>
-            <ul class="container-li">
+            <div class="Container-D">
+                <div class="justify-content-center">
+                    <div class="col-auto text-center">
+                <p id="Sobre-Mim">Atualmente, estou me aprofundando em outras linguagens de programação, como JavaScript e HTML/CSS, além de frameworks como Node.js e Bootstrap. Meu objetivo é me tornar um desenvolvedor Full Stack.</p>
+                </div>
+                </div>
+            </div>
+            <div id="Tecnologias">
+                <h2 id="Tec-H1">Tecnologias que conheço:</h2>
                 <div class="container-teca">
                     <div class="py">
-                        <li id="python">Python</li>
+                        <p id="python">Python</p>
                         <hr>
-                        <p>A minha primeira linguagem foi python, pelo seu simples desenvolvimento e sintaxe facil, com
-                            ele
-                            obtive logica de programação, entre outras coisas, como if e else, que uso ate em outras
-                            linguagens,
-                            e etc</p>
+                        <li>Sistemas de adivinhação</li>
+                        <li>Conceitos básicos de programação</li>
                     </div>
-
                     <div class="js">
-                        <li id="js">Javascript</li>
+                        <p id="js">JavaScript</p>
                         <hr>
-                        <p>Eu estudei javascript por apenas 16 dias, e com conhecimento de programação que eu ja tinha
-                            adquirido, eu consegui estudar menos e aprender mais.</p>
+                        <li>Desenvolvimento Web</li>
+                        <li>Interatividade</li>
                     </div>
                     <div class="html">
-                        <li id="html-css">HTML-CSS</li>
+                        <p id="html-css">HTML/CSS</p>
                         <hr>
-                        <p>Apos estudar python, eu aprendi HTML-CSS, eu ja estava tentando aprender meu primeiro site,
-                            ate esse ponto eu so usava celular, e mesmo com limitações, eu ja conseguia fazer sites
-                            interativos.</p>
+                        <li>Estruturação de páginas</li>
+                        <li>Estilização de elementos</li>
                     </div>
                     <div class="node">
-                        <li id="node">Node.js</li>
+                        <p id="node">Node.js</p>
                         <hr>
-                        <p>Eu aprendi muito do js usando o Node, eu fazia sistema de documentação, sistema de identidade
-                            falsa e correta, e aprendia sobre operadores ternarios.</p>
+                        <li>Servidor Back-End</li>
+                        <li>APIs</li>
                     </div>
                     <div class="boot">
-                        <li id="bootstrap">Bootstrap</li>
+                        <p id="bootstrap">Bootstrap</p>
                         <hr>
-                        <p>Eu aprendi muito de bootstrap depois de começar a codar com ele, ele me ajuda muito fazendo
-                            assim ficar muito mais facil de fazer meu sites com mais velocidade e antecedencia, pos ele
-                            deixa muitos comandos longos e dificeis de forma rapida economica e pratica!</p>
+                        <li>Design responsivo</li>
+                        <li>Componentes prontos</li>
                     </div>
                     <div class="full">
-                        <li id="dev-full-stack">Futuro Dev Full-Stack</li>
-                        <br>
-                        <p>não é atoa que daqui a uns meses eu ja va conseguir virar um desenvolvedor full stack, depois
-                            de
-                            aprender 2 frameworks de 2 ferramentas, o react para javascript, e o bootstrap ou tailwind
-                            para css,
-                            porem vem sendo dificil pos quero explorar varias areas de emprego, e experimentar outras
-                            areas.</p>
+                        <p id="dev-full-stack">Dev Full Stack</p>
+                        <hr>
+                        <li>Desenvolvimento Completo</li>
+                        <li>Front-End e Back-End</li>
                     </div>
-                    <hr>
                 </div>
-            </ul>
-        </div>
-        <h2>Espero que voce tenha gostado:) Farei mais projetos e quando termina-los irei atualizar esta pagina
-        </h2>
-        <p id="tl">*Projetos Serão enviados pelo meu contato do whats*</p>
-        <div class="Coopy">
-            <div class="msg" class="--bs-body-bg">
-                &copy; Louis 2024 <p>Todos recursos usados foram criados manualmente por mim!</p>
+            </div>
+            <div class="fim">
+                <h3 class="msg">Obrigado por visitar meu portfólio!</h3>
             </div>
         </div>
     </div>
 
-    <script>
-        function fecharNavbar() {
-            var navbar = document.querySelector('.navbar-collapse');
-            if (navbar.classList.contains('show')) {
-                navbar.classList.remove('show');
-            }
-        } 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
