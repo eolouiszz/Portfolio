@@ -71,10 +71,10 @@
         #Tec-H1 {
             color: black;
             font-size: 20px;
-            display: center;
+            display: flex;
             align-items: center;
             justify-content: center;
-
+            margin-top: -5px;
         }
 
         h2 {
@@ -87,9 +87,9 @@
         }
 
         .msg {
-            color: white;
+            color: rgb(0, 0, 0);
             font-family: 'quicksand';
-            font-size: 10px;
+            font-size: 20px;
         }
 
         #python, #js, #html-css, #node, #bootstrap, #dev-full-stack {
@@ -99,12 +99,12 @@
             margin: 0 auto;
         }
 
-        #python { color: rgb(100, 73, 250); font-size: 35px; }
-        #js { color: rgb(255, 243, 17); font-size: 36px; }
-        #html-css { color: cadetblue; font-size: 32px; }
-        #node { color: rgb(102, 255, 0); font-size: 30px; }
-        #bootstrap { color: rgb(221, 3, 255); font-size: 30px; }
-        #dev-full-stack { color: rgb(0, 0, 0); font-size: 27px; }
+        #python { color: rgb(29, 0, 195); font-size: 35px; margin-top: 10px;}
+        #js { color: rgb(190, 181, 0); font-size: 36px; margin-top: 10px;}
+        #html-css { color: cadetblue; font-size: 32px; margin-top: 10px;}
+        #node { color: rgb(65, 163, 0); font-size: 30px; margin-top: 10px;}
+        #bootstrap { color: rgb(134, 0, 155); font-size: 30px; margin-top: 10px;}
+        #dev-full-stack { color: rgb(0, 0, 0); font-size: 27px; margin-top: 10px;}
 
         .fim {
             display: flex;
@@ -234,21 +234,25 @@
             <div class="container-A">
                 <div class="justify-content-center">
                     <div class="col-auto text-center">
-                <p>Olá, eu sou o Louis, tenho 12 anos, e venho mergulhando no mundo da programação desde os meus 10 ou 11 anos. Desde os meus 6 ou 7 anos, desenvolvi uma paixão ardente por tecnologia.</p>
+                <p class="mt-3">Olá, me chamo Louis e tenho 12 anos, em fevereiro dia 1 comecei a estudar programação, com o celular usando termux e pydroid, estudei python por exatas 3 semanas, depois de estudar python eu me aprofundei em procurar e entender as areas, mesmo apenas 3 semanas estudando programação ja estava gostando dos resultados, e principalmente tendo o gosto por programar.<br>
+                <br>
+                Depois comecei a participar de comunidades e forums, gostava bastante de ver o dia dia de um programador, seja home office ou em trabalho presencial mesmo, passava horas escrevendo conteudo e estudando com outras pessoas, oque me fez começar a gostar de fazer projetos pessoais e codigo aberto mantendo essencia.<br>
+                <br>
+                2 semanas so programando em python e conversando com outros programadores eu comecei a ver vagas de emprego, e como funciona areas de trabalho, topicos de empresas, e areas de programção, nessa epoca a area que eu mais tive atenção, foi a area de desenvolvimento web, logo foi a area que eu fui atras de estudar.</p>
                 </div>
                 </div>
             </div>
             <div class="Container-C">
                 <div class="justify-content-center">
                     <div class="col-auto text-center">
-                <p id="Sobre-Tec">Depois de estudar Python por um mês e três semanas, fiquei muito feliz com os resultados. Conseguia criar sistemas para adivinhar números usando o randint e já compreendia os conceitos básicos de programação. Foi com Python que desenvolvi minha lógica. Foi com Python que desenvolvi minha lógica e comecei a explorar mais a fundo o mundo da programação.</p>
+                <p id="Sobre-Tec"></p>
                 </div>
                 </div>
             </div>
             <div class="Container-D">
                 <div class="justify-content-center">
                     <div class="col-auto text-center">
-                <p id="Sobre-Mim">Atualmente, estou me aprofundando em outras linguagens de programação, como JavaScript e HTML/CSS, além de frameworks como Node.js e Bootstrap. Meu objetivo é me tornar um desenvolvedor Full Stack.</p>
+                <p id="Sobre-Mim"></p>
                 </div>
                 </div>
             </div>
@@ -259,37 +263,49 @@
                         <p id="python">Python</p>
                         <hr>
                         <li>Sistemas de adivinhação</li>
+                        <p>fiz sistemas basicos de python, esse projeto foi meu primeiro contato com "import" alem de outros projetos simples.</p>
                         <li>Conceitos básicos de programação</li>
+                        <p>Aprendi fundamentos basicos de programação graças ao python.</p>
                     </div>
                     <div class="js">
                         <p id="js">JavaScript</p>
                         <hr>
                         <li>Desenvolvimento Web</li>
+                        <p>Me aventurei em front-end depois de aprender basico de python, aprendi javascript mais rapido graças a logica que obtive no python</p>
                         <li>Interatividade</li>
+                        <p>Depois de aprender o basico de javascript, me aventurei no front.</p>
                     </div>
                     <div class="html">
                         <p id="html-css">HTML/CSS</p>
                         <hr>
                         <li>Estruturação de páginas</li>
+                        <p>Obviamente depois de aprender o javascript me especializei em fazer estruturas de forma mais simples e geral, fazendo bom uso de HTML.</p>
                         <li>Estilização de elementos</li>
+                        <p>Aprendendo mais de HTML, aprendi tambem de css, foi nesse periodo que estudei UI/UX</p>
                     </div>
                     <div class="node">
                         <p id="node">Node.js</p>
                         <hr>
-                        <li>Servidor Back-End</li>
-                        <li>APIs</li>
+                        <li>Teste De Js</li>
+                        <p>Alem do javascript do cliente, testei Node js, para me acustumar ao ambiente back-end, e entender um pouco mais de javascript fora do navegador.</p>
+                        <li>Servidores</li>
+                        <p>Foquei tambem em estudar mais infruestruturas e como funciona na web, começando do cliente ate do seridor, e tratando no banco de dados, porem foi bastante raso, nada avançado nesse ponto</p>
                     </div>
                     <div class="boot">
                         <p id="bootstrap">Bootstrap</p>
                         <hr>
                         <li>Design responsivo</li>
+                        <p>Foquei mais em CSS Depois de um tempo fazendo estruturas, aprendendo tecnicas como media queries, flexbox, e grid.</p>
                         <li>Componentes prontos</li>
+                        <p>Uma vantagem absurda do bootstrap é ter componentes prontos e suas explicaçoes, facilitando o uso</p>
                     </div>
                     <div class="full">
-                        <p id="dev-full-stack">Dev Full Stack</p>
+                        <p id="dev-full-stack">React js</p>
                         <hr>
-                        <li>Desenvolvimento Completo</li>
-                        <li>Front-End e Back-End</li>
+                        <li>Inicio</li>
+                        <p>Comecei no react recentemente, ainda estudo pouco, aprendi e entendi seus conceitos rapidos, fazendo componentes logicos com javascript e JSX.</p>
+                        <li>trabalho em conjunto</li>
+                        <p>Em quanto eu aprendia react eu aprendia git, vite e outras ferramentas "novas" como json, npm, aprender react por enquanto foi uma experiencia boa, principalmente a parte do git, que me fez finalmente lançar projetos em Ar com o vercel.</p>
                     </div>
                 </div>
             </div>
