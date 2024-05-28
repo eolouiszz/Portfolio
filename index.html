@@ -10,8 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
     <style>
         body {
             font-family: 'Quicksand', sans-serif;
@@ -29,19 +31,38 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin: 10px 0;
             color: black;
-            font-family: quicksand;
+            font-family: 'Quicksand', sans-serif;
             width: 100%;
-            transition: transform 0.3s ease;
+            transition: transform 0.5s ease;
         }
 
         .navbar-custom:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         .navbar-custom .navbar-brand,
         .navbar-custom .navbar-nav .nav-link {
             color: black;
-            font-family: 'quicksand';
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .nav-link {
+            margin-left: 20px;
+            padding: 10px;
+            transition: all 0.5s ease;
+            display: inline-block;
+            /* Para manter o link em linha e permitir padding/margin */
+        }
+
+        .nav-link:hover {
+            color: rgb(23, 23, 23);
+            background-color: rgb(95, 95, 94);
+            border: 1px solid white;
+            border-radius: 12px;
+            padding: 10px 20px;
+            /* Ajuste o padding para garantir que o texto não se mova */
+            margin-left: 10px;
+            /* Ajuste o margin-left para equilibrar o efeito de escala */
         }
 
         .logo1 {
@@ -62,7 +83,8 @@
             margin-right: 150px;
         }
 
-        #Sobre-Mim, #Sobre-Tec {
+        #Sobre-Mim,
+        #Sobre-Tec {
             margin: 0 auto;
             margin-top: 30px;
             max-width: 90%;
@@ -92,19 +114,53 @@
             font-size: 20px;
         }
 
-        #python, #js, #html-css, #node, #bootstrap, #dev-full-stack {
+        #python,
+        #js,
+        #html-css,
+        #node,
+        #bootstrap,
+        #dev-full-stack {
             text-decoration: none;
             list-style: none;
             font-family: 'Roboto Mono';
             margin: 0 auto;
         }
 
-        #python { color: rgb(29, 0, 195); font-size: 35px; margin-top: 10px;}
-        #js { color: rgb(190, 181, 0); font-size: 36px; margin-top: 10px;}
-        #html-css { color: cadetblue; font-size: 32px; margin-top: 10px;}
-        #node { color: rgb(65, 163, 0); font-size: 30px; margin-top: 10px;}
-        #bootstrap { color: rgb(134, 0, 155); font-size: 30px; margin-top: 10px;}
-        #dev-full-stack { color: rgb(0, 0, 0); font-size: 27px; margin-top: 10px;}
+        #python {
+            color: rgb(29, 0, 195);
+            font-size: 35px;
+            margin-top: 10px;
+        }
+
+        #js {
+            color: rgb(190, 181, 0);
+            font-size: 36px;
+            margin-top: 10px;
+        }
+
+        #html-css {
+            color: cadetblue;
+            font-size: 32px;
+            margin-top: 10px;
+        }
+
+        #node {
+            color: rgb(65, 163, 0);
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        #bootstrap {
+            color: rgb(134, 0, 155);
+            font-size: 30px;
+            margin-top: 10px;
+        }
+
+        #dev-full-stack {
+            color: rgb(0, 0, 0);
+            font-size: 27px;
+            margin-top: 10px;
+        }
 
         .fim {
             display: flex;
@@ -117,7 +173,12 @@
             color: white;
         }
 
-        .py, .js, .html, .node, .boot, .full {
+        .py,
+        .js,
+        .html,
+        .node,
+        .boot,
+        .full {
             border: 1px solid black;
             border-radius: 10px;
             text-align: center;
@@ -126,7 +187,12 @@
             transition: transform 0.3s ease;
         }
 
-        .py:hover, .js:hover, .html:hover, .node:hover, .boot:hover, .full:hover {
+        .py:hover,
+        .js:hover,
+        .html:hover,
+        .node:hover,
+        .boot:hover,
+        .full:hover {
             transform: scale(1.1);
         }
 
@@ -136,7 +202,7 @@
             gap: 20px;
         }
 
-        .container-teca > div {
+        .container-teca>div {
             background-color: #f0f0f0;
             border: 1px solid #ccc;
             box-sizing: border-box;
@@ -160,7 +226,7 @@
                 align-items: center;
             }
 
-            .container-teca > div {
+            .container-teca>div {
                 width: 100%;
                 margin: 10px 0;
             }
@@ -173,6 +239,14 @@
                 margin: 0;
             }
         }
+
+        #tiltt {
+            font-size: 20px;
+        }
+
+        .container-A {
+            font-size: 23px;
+        }
     </style>
 </head>
 
@@ -182,23 +256,27 @@
             <nav class="navbar navbar-expand-lg navbar-custom">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Louis, Conheça mais</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contatosModal">Contatos</a>
+                                <a class="nav-link" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#contatosModal">Contatos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#redesSociaisModal">Redes Sociais</a>
+                                <a class="nav-link" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#redesSociaisModal">Redes Sociais</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Modal de Contatos -->
-            <div class="modal fade" id="contatosModal" tabindex="-1" aria-labelledby="contatosModalLabel" aria-hidden="true">
+            <div class="modal fade" id="contatosModal" tabindex="-1" aria-labelledby="contatosModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -212,7 +290,8 @@
                 </div>
             </div>
             <!-- Modal de Redes Sociais -->
-            <div class="modal fade" id="redesSociaisModal" tabindex="-1" aria-labelledby="redesSociaisModalLabel" aria-hidden="true">
+            <div class="modal fade" id="redesSociaisModal" tabindex="-1" aria-labelledby="redesSociaisModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -230,30 +309,41 @@
                     </div>
                 </div>
             </div>
-            <h1>Seja bem vindo, A meu portfolio <br><strong>Louis</strong></h1>
+            <div class="justify-content-center">
+                <div class="col-auto text-center">
+                    <h1 id="tiltt">Seja bem vindo, A meu portfolio <br><strong>Louis</strong></h1>
+                </div>
+            </div>
             <div class="container-A">
                 <div class="justify-content-center">
                     <div class="col-auto text-center">
-                <p class="mt-3">Olá, me chamo Louis e tenho 12 anos, em fevereiro dia 1 comecei a estudar programação, com o celular usando termux e pydroid, estudei python por exatas 3 semanas, depois de estudar python eu me aprofundei em procurar e entender as areas, mesmo apenas 3 semanas estudando programação ja estava gostando dos resultados, e principalmente tendo o gosto por programar.<br>
-                <br>
-                Depois comecei a participar de comunidades e forums, gostava bastante de ver o dia dia de um programador, seja home office ou em trabalho presencial mesmo, passava horas escrevendo conteudo e estudando com outras pessoas, oque me fez começar a gostar de fazer projetos pessoais e codigo aberto mantendo essencia.<br>
-                <br>
-                2 semanas so programando em python e conversando com outros programadores eu comecei a ver vagas de emprego, e como funciona areas de trabalho, topicos de empresas, e areas de programção, nessa epoca a area que eu mais tive atenção, foi a area de desenvolvimento web, logo foi a area que eu fui atras de estudar.</p>
-                </div>
-                </div>
-            </div>
-            <div class="Container-C">
-                <div class="justify-content-center">
-                    <div class="col-auto text-center">
-                <p id="Sobre-Tec"></p>
-                </div>
-                </div>
-            </div>
-            <div class="Container-D">
-                <div class="justify-content-center">
-                    <div class="col-auto text-center">
-                <p id="Sobre-Mim"></p>
-                </div>
+                        <p class="mt-3">Olá, me chamo Louis e tenho 12 anos, irei contar minha historia de forma resumida e direta(seja bem vindo:). em fevereiro dia 1 comecei a estudar
+                            programação, com o celular usando termux e pydroid, estudei python por exatas 3 semanas,
+                            depois de estudar python eu me aprofundei em procurar e entender as areas, mesmo apenas 3
+                            semanas estudando programação ja estava gostando dos resultados, e principalmente tendo o
+                            gosto por programar.<br>
+                            <br>
+                            Depois comecei a participar de comunidades e forums, gostava bastante de ver o dia dia de um
+                            programador, seja home office ou em trabalho presencial mesmo, passava horas escrevendo
+                            conteudo e estudando com outras pessoas, oque me fez começar a gostar de fazer projetos
+                            pessoais e codigo aberto mantendo essencia.<br>
+                            <br>
+                            2 semanas so programando em python e conversando com outros programadores eu comecei a ver
+                            vagas de emprego, e como funciona areas de trabalho, topicos de empresas, e areas de
+                            programção, nessa epoca a area que eu mais tive atenção, foi a area de desenvolvimento web,
+                            logo foi a area que eu fui atras de estudar.<br>
+                            <br>
+                            dia 2 de março comecei a programar em html, fazia estruturas simples porem com comentarios
+                            para compartilhar projetos para outras pessoas, fiz varios testes de html e css oque me fez
+                            ter conhecimento amplo dessas 2 ferramentas, oque veio me ajudar muito a entender sistemas
+                            que uso hoje em dia, bootstrap, react (JSX).<br>
+                            <br>
+                            dia 13-15 de março ainda comecei a me aventurar por JavaScript, entendi muito mais rapido seus codigos e sintaxes graças a logica que eu havia obtido em python e html, fiz sistemas simples de javascript como DOM, Function, Application Programming Interface (API de web, resumindo) como location, window, document e muito mais, desde ja eu aprendi a manipular dados com javascript, e desde o python, tenho essas tecnicas de manipulação de dados.<br>
+                            <br>
+                            assim foi ate dia 5 de abril, onde minha mãe me deu uma chance, e me imprestou o notebook dela, foi um grande passo para mim pos passei muito tempo apenas no celular (2 meses) e de 5 de abril ate dia 12 estava aprendendo a usar um computador, estava a 4 anos ou mais sem usar um (Para quem esta curioso meu notebook tem 12 anos e ele é windows 10 e tem i7) depois desse tempo comecei a baixar ferramentas, python, node, vs code, e por hoje so (sem contar Lua e roblox studios)
+                        </p>
+
+                    </div>
                 </div>
             </div>
             <div id="Tecnologias">
@@ -263,7 +353,8 @@
                         <p id="python">Python</p>
                         <hr>
                         <li>Sistemas de adivinhação</li>
-                        <p>fiz sistemas basicos de python, esse projeto foi meu primeiro contato com "import" alem de outros projetos simples.</p>
+                        <p>fiz sistemas basicos de python, esse projeto foi meu primeiro contato com "import" alem de
+                            outros projetos simples.</p>
                         <li>Conceitos básicos de programação</li>
                         <p>Aprendi fundamentos basicos de programação graças ao python.</p>
                     </div>
@@ -271,7 +362,8 @@
                         <p id="js">JavaScript</p>
                         <hr>
                         <li>Desenvolvimento Web</li>
-                        <p>Me aventurei em front-end depois de aprender basico de python, aprendi javascript mais rapido graças a logica que obtive no python</p>
+                        <p>Me aventurei em front-end depois de aprender basico de python, aprendi javascript mais rapido
+                            graças a logica que obtive no python</p>
                         <li>Interatividade</li>
                         <p>Depois de aprender o basico de javascript, me aventurei no front.</p>
                     </div>
@@ -279,7 +371,8 @@
                         <p id="html-css">HTML/CSS</p>
                         <hr>
                         <li>Estruturação de páginas</li>
-                        <p>Obviamente depois de aprender o javascript me especializei em fazer estruturas de forma mais simples e geral, fazendo bom uso de HTML.</p>
+                        <p>Obviamente depois de aprender o javascript me especializei em fazer estruturas de forma mais
+                            simples e geral, fazendo bom uso de HTML.</p>
                         <li>Estilização de elementos</li>
                         <p>Aprendendo mais de HTML, aprendi tambem de css, foi nesse periodo que estudei UI/UX</p>
                     </div>
@@ -287,25 +380,33 @@
                         <p id="node">Node.js</p>
                         <hr>
                         <li>Teste De Js</li>
-                        <p>Alem do javascript do cliente, testei Node js, para me acustumar ao ambiente back-end, e entender um pouco mais de javascript fora do navegador.</p>
+                        <p>Alem do javascript do cliente, testei Node js, para me acustumar ao ambiente back-end, e
+                            entender um pouco mais de javascript fora do navegador.</p>
                         <li>Servidores</li>
-                        <p>Foquei tambem em estudar mais infruestruturas e como funciona na web, começando do cliente ate do seridor, e tratando no banco de dados, porem foi bastante raso, nada avançado nesse ponto</p>
+                        <p>Foquei tambem em estudar mais infruestruturas e como funciona na web, começando do cliente
+                            ate do seridor, e tratando no banco de dados, porem foi bastante raso, nada avançado nesse
+                            ponto</p>
                     </div>
                     <div class="boot">
                         <p id="bootstrap">Bootstrap</p>
                         <hr>
                         <li>Design responsivo</li>
-                        <p>Foquei mais em CSS Depois de um tempo fazendo estruturas, aprendendo tecnicas como media queries, flexbox, e grid.</p>
+                        <p>Foquei mais em CSS Depois de um tempo fazendo estruturas, aprendendo tecnicas como media
+                            queries, flexbox, e grid.</p>
                         <li>Componentes prontos</li>
-                        <p>Uma vantagem absurda do bootstrap é ter componentes prontos e suas explicaçoes, facilitando o uso</p>
+                        <p>Uma vantagem absurda do bootstrap é ter componentes prontos e suas explicaçoes, facilitando o
+                            uso</p>
                     </div>
                     <div class="full">
                         <p id="dev-full-stack">React js</p>
                         <hr>
                         <li>Inicio</li>
-                        <p>Comecei no react recentemente, ainda estudo pouco, aprendi e entendi seus conceitos rapidos, fazendo componentes logicos com javascript e JSX.</p>
+                        <p>Comecei no react recentemente, ainda estudo pouco, aprendi e entendi seus conceitos rapidos,
+                            fazendo componentes logicos com javascript e JSX.</p>
                         <li>trabalho em conjunto</li>
-                        <p>Em quanto eu aprendia react eu aprendia git, vite e outras ferramentas "novas" como json, npm, aprender react por enquanto foi uma experiencia boa, principalmente a parte do git, que me fez finalmente lançar projetos em Ar com o vercel.</p>
+                        <p>Em quanto eu aprendia react eu aprendia git, vite e outras ferramentas "novas" como json,
+                            npm, aprender react por enquanto foi uma experiencia boa, principalmente a parte do git, que
+                            me fez finalmente lançar projetos em Ar com o vercel.</p>
                     </div>
                 </div>
             </div>
