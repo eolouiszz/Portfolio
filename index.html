@@ -157,10 +157,24 @@
 
         #dev-full-stack {
             color: rgb(0, 0, 0);
-            font-size: 27px;
+            font-size: 30px;
             margin-top: 10px;
         }
-
+        #Lua {
+            color: rgb(0, 187, 255);
+            font-size: 37px;
+            margin-top: 10px;
+        }
+        #Flask {
+            color: rgb(255, 0, 0);
+            font-size: 36px;
+            margin-top: 10px;
+        }
+        #Fetch {
+            color: rgb(70, 99, 2);
+            font-size: 37px;
+            margin-top: 10px;
+        }
         .fim {
             display: flex;
             justify-content: center;
@@ -178,13 +192,15 @@
         .html,
         .node,
         .boot,
-        .full {
+        .full,
+        .Lua {
             border: 1px solid black;
             border-radius: 10px;
             text-align: center;
             margin-top: 20px;
             width: 260px;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adicionando a sombra na transição */
+            box-shadow: 0px 1px 2px 0px rgb(27, 27, 27);
         }
 
         .py:hover,
@@ -192,10 +208,19 @@
         .html:hover,
         .node:hover,
         .boot:hover,
-        .full:hover {
+        .full:hover,
+        .Lua {
             transform: scale(1.1);
+    animation: shadow-pulse 1s infinite alternate;
         }
-
+        @keyframes shadow-pulse {
+    0% {
+        box-shadow: 0px 5px 2px 0px rgb(27, 27, 27);
+    }
+    100% {
+        box-shadow: 2px 5px 24px 0px rgb(38, 38, 38);
+    }
+}
         .container-teca {
             display: flex;
             flex-wrap: wrap;
@@ -245,7 +270,7 @@
         }
 
         .container-A {
-            font-size: 15px;
+            font-size: 16px;
         }
 
         li {
@@ -408,7 +433,31 @@
                             npm, aprender react por enquanto foi uma experiencia boa, principalmente a parte do git, que
                             me fez finalmente lançar projetos em Ar com o vercel.</p>
                     </div>
-                </div>
+                    <div class="full">
+                        <p id="Lua">Lua</p>
+                        <hr>
+                        <li>Roblox studios</li>
+                        <p>Antes de eu começar a a aprender Lua de fato, eu me especializei em roblox studios, para entender o basico, e ja ter uma base boa sobre workspace, e outras pastas</p>
+                        <li>Logica</li>
+                        <p>Com meu conhecimenton ja de python, e javscript. aprender lua foi bastante rapido e suave para mim, usando muito da logica do JavaScript, oque facilitou no aprendizado, e tambem entender outros scripts.</p>
+                    </div>
+                    <div class="full">
+                        <p id="Flask">Flask</p>
+                        <hr>
+                        <li>conhecimento intermediario em python</li>
+                        <p>Antes de eu realmente começar a estudar flask, eu me aprofundei um pouco mais em python, para entender topicos que eu ainda não tinha conhecimento.</p>
+                        <li>Servidores locais</li>
+                        <p>Depois de eu ja ter um conhecimento melhor em python eu foquei 100% em flask alias, estou focado ate agora, estudei fazer servidores locais, uma coisa que eu não custumava fazer antes, testar metodos get, e etc.</p>
+                        </div>
+                        <div class="full">
+                            <p id="Fetch">Fetch - API</p>
+                            <hr>
+                            <li>HTTP</li>
+                            <p>Antes de começar realmene no flask, foquei em aprender mais do JavaScript, e methods http, e entender o http em si.</p>
+                            <li>requesição json & http</li>
+                            <p>Fiz varios testes de get, em dados manipulados pelo json, e agora realmente em servidores com flask, aprendi muita coisa nesses 4 dias ja, back-end alem de ser uma coisa bem dificil, depois que voce pega bastante gosto, fica bastante facil.</p>
+                        </div>
+                        </div>
             </div>
         </div>
     </div>
